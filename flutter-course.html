@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Portal</title>
+    <link rel="stylesheet" href="styles.css">
+   
+
+
+        
+</head>
+<body>
+    <header class="header">
+        <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <div class="container">
+            <div class="logo">
+                <div class="logo">E-Learning Portal</div>
+                <button class="hamburger" id="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <a href="#courses">Courses</a>
+            <a href="#languages">Languages</a>
+            <a href="company.html">Company</a>
+            <a href="#services">Other Services</a>
+            <a href="#contact">Contact</a>
+                   
+                
+            </nav>
+    
+        </div>
+    </header>
+
+
+    <main class="main-container">
+        <h1>Mobile Programming with Flutter</h1>
+        <p>Welcome to the Flutter programming course! Explore step-by-step tutorials and learn to create beautiful mobile apps with ease. Each section will guide you through fundamental concepts and techniques used in Flutter development.</p>
+    
+        <div class="section introduction-section">
+            <h2>1. Introduction to Flutter</h2>
+            <p>In this module, you'll get an overview of Flutter and learn how to set up your development environment. You'll also understand the key differences between Flutter and traditional native development.</p>
+        </div>
+    
+        <div class="section widgets-section">
+            <h2>2. Widgets and UI Basics</h2>
+            <p>Learn the building blocks of Flutter – widgets. Understand the difference between StatelessWidget and StatefulWidget and how to use them to create dynamic and static content.</p>
+        </div>
+    
+        <div class="section layout-section">
+            <h2>3. Layouts in Flutter</h2>
+            <p>Master the essential layout widgets in Flutter, including Column, Row, Stack, and Container, and learn how to create responsive designs that adapt to different screen sizes.</p>
+        </div>
+    
+        <div class="section navigation-section">
+            <h2>4. Navigation and Routing</h2>
+            <p>Understand how to manage different pages in your app using Flutter's Navigator class, and learn how to implement routes and named routes for seamless navigation.</p>
+        </div>
+    
+        <div class="section state-management-section">
+            <h2>5. State Management</h2>
+            <p>Explore stateful widgets in Flutter and dive into state management solutions like Provider and Riverpod. Learn how to manage and update UI based on user interaction and app state.</p>
+        </div>
+    
+        <div class="section networking-section">
+            <h2>6. Networking and API Integration</h2>
+            <p>Learn how to send HTTP requests, handle responses, and parse JSON data in Flutter. Integrate third-party APIs to fetch dynamic content and display it in your app.</p>
+        </div>
+    
+        <div class="section storage-section">
+            <h2>7. Local Data Storage</h2>
+            <p>Learn how to store data locally on the device using SharedPreferences, Hive, and SQLite. Store persistent user preferences or offline data efficiently.</p>
+        </div>
+    
+        <div class="section advanced-ui-section">
+            <h2>8. Advanced UI Design</h2>
+            <p>Enhance your Flutter UI skills with custom widgets, animations, and design techniques. Utilize Flutter's powerful animation library and external packages like Flutter Animations to create dynamic and engaging interfaces.</p>
+        </div>
+    
+        <div class="section firebase-section">
+            <h2>9. Firebase Integration</h2>
+            <p>Integrate Firebase with your Flutter app to enable real-time features like authentication, Firestore database, and real-time data synchronization.</p>
+        </div>
+    
+        <div class="section deploying-section">
+            <h2>10. Deploying Apps</h2>
+            <p>Learn how to build APKs for Android and IPAs for iOS. Understand the steps involved in deploying your app on the Google Play Store and the Apple App Store.</p>
+        </div>
+    </main>
+    
+    
+    
+</body>
+    <footer>
+        <p>&copy; 2025 E-Learning Portal. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Handle Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent form from refreshing the page
+            alert('Thank you for contacting us! We will get back to you soon.');
+            this.reset(); // Reset the form
+        });
+
+        // Toggle Sidebar
+       // Toggle Sidebar
+       document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const container = document.querySelector('.container');
+
+    hamburger.addEventListener('click', function() {
+        // Toggle the active class on the container
+        container.classList.toggle('active');
+        // Toggle the 'open' class on the hamburger icon
+        hamburger.classList.toggle('open');
+    });
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <div class="container">
+            <div class="logo">
+                <div class="logo">E-Learning Portal</div>
+                <button class="hamburger" id="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <a href="index.html">Courses</a>
+            <a href="#languages">Languages</a>
+            <a href="company.html">Company</a>
+            <a href="other-services.html">Other Services</a>
+            <a href="#contact">Contact</a>
+                   
+                
+            </nav>
+    
+        </div>
+    </header>
+    <section class="hero">
+        <h1>Welcome to the E-Learning Portal</h1>
+        <p>Explore courses in Mobile Programming, Database Management, Web Development, and more.
+             Learn new skills, build projects, and enhance your career.</p>
+        <button onclick="alert('Get Started with Our Courses!')">Get Started</button>
+    </section>
+    
+    <section id="courses">
+        <h2>Courses</h2>
+        <div class="grid">
+            <div class="card" onclick="window.location.href='flutter-course.html'">
+                <h3>Mobile Programming (Flutter)</h3>
+                <img src="mobile-development.jpg" alt="Mobile Programming Screenshot" />
+                <p>Mobile Programming (Flutter).<br><strong>Sections:</strong> 10 each</p>
+            </div>
+            
+            <div class="card">
+                <h3>Database Management</h3>
+                <img src="database-dev.jpg" alt="Database Management Screenshot" />
+                <p>Learn MySQL, PostgreSQL, and MongoDB.<br><strong>Sections:</strong> 10 each</p>
+            </div>
+            <div class="card">
+                <h3>Web Development</h3>
+                <img src="web-dev.png" alt="Web Development Screenshot" />
+                <p>Learn HTML, CSS, and JavaScript from scratch.<br><strong>Sections:</strong> 20</p>
+            </div>
+
+            <div class="card">
+                <h3>Mobile Programming (Android Native)</h3>
+                <img src="android.png" alt="Web Development Screenshot" />
+                <h3>Mobile Programming (Android Native)</h3>
+                <p>.<br><strong>Sections:</strong> 20</p>
+            </div>
+
+            <div class="card">
+                <h3>MERN Stack
+                    </h3>
+                <img src="mern.jpg" alt="Web Development Screenshot" />
+                <p>MERN Stack<br><strong>Sections:</strong> 20</p>
+            </div>
+
+            <div class="card">
+                <h3>Java Spring Boot</h3>
+                <img src="java.png" alt="Web Development Screenshot" />
+                <p>Learn Java Spring Boot.<br><strong>Sections:</strong> 20</p>
+            </div>
+
+            
+
+        </div>
+    </section>
+
+   
+
+   
+
+ 
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Write your message here" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 E-Learning Portal. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Handle Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent form from refreshing the page
+            alert('Thank you for contacting us! We will get back to you soon.');
+            this.reset(); // Reset the form
+        });
+
+        // Toggle Sidebar
+       // Toggle Sidebar
+       document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const container = document.querySelector('.container');
+
+    hamburger.addEventListener('click', function() {
+        // Toggle the active class on the container
+        container.classList.toggle('active');
+        // Toggle the 'open' class on the hamburger icon
+        hamburger.classList.toggle('open');
+    });
+});
+
+    </script>
+</body>
+</html>

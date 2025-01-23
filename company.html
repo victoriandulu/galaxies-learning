@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Portal</title>
+    <link rel="stylesheet" href="styles.css">
+
+    
+  <style>
+    /* General Styles */
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+
+
+/* Sections */
+section#about, section#mission, section#vision {
+  padding: 50px 20px;
+  margin-top: 70px;
+  background: whitesmoke;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+#about h3, #mission h2, #vision h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+
+
+/* OUR SERVICES */
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    
+}
+
+.service-card {
+    background-color: #000033; /* Card background */
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #FFA500; /* Highlighted orange for icons */
+    margin-bottom: 10px;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <div class="container">
+            <div class="logo">
+                <div class="logo">E-Learning Portal</div>
+                <button class="hamburger" id="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <a href="index.html">Courses</a>
+            <a href="#languages">Languages</a>
+            <a href="company.html">Company</a>
+            <a href="other-services.html">Other Services</a>
+            <a href="#contact">Contact</a>
+                   
+                
+            </nav>
+    
+        </div>
+    </header>
+  
+    <!-- About Us Section -->
+    <section id="about">
+        <h3>About Us</h3>
+        <p>Founded in 2019, we are a group of passionate young software developers committed to providing innovative solutions to the tech industry. Our mission is to create opportunities for talented individuals and mentor the next generation of tech leaders.</p>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission">
+        <h2>Mission</h2>
+        <p>To empower young developers by providing them with opportunities to grow and learn, while creating innovative software solutions that address real-world challenges.</p>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision">
+        <h2>Vision</h2>
+        <p>To become a leading technology company that nurtures young talent and fosters creativity and innovation in the software development field.</p>
+    </section>
+
+
+    <section id="intro-services">
+        <h2>Why Choose Our Services</h2>
+        <p>
+            At Galaxies Coders, we understand that every business has unique challenges and goals. 
+            Our team of experts provides tailored solutions to help you overcome obstacles, optimize operations, 
+            and unlock new growth opportunities. With cutting-edge technology, industry expertise, 
+            and a commitment to excellence, we deliver services that empower businesses to thrive in a 
+            fast-paced digital world.
+        </p>
+    </section>
+    
+    <section id="services">
+        <div class="services-container">
+            <div class="service-card" onclick="openModal('webDev')">
+                <i class="fas fa-code service-icon"></i>
+                <h3>Web Development</h3>
+                <p>Creating cutting-edge websites for your business needs.</p>
+            </div>
+            <div class="service-card" onclick="openModal('mobileDev')">
+                <i class="fas fa-mobile-alt service-icon"></i>
+                <h3>Mobile Development</h3>
+                <p>Building high-quality mobile applications for iOS and Android.</p>
+            </div>
+            <div class="service-card" onclick="openModal('uiux')">
+                <i class="fas fa-paint-brush service-icon"></i>
+                <h3>UI/UX Design</h3>
+                <p>Designing user-friendly interfaces and seamless experiences.</p>
+            </div>
+            <div class="service-card" onclick="openModal('webApp')">
+                <i class="fas fa-laptop service-icon"></i>
+                <h3>Web Applications</h3>
+                <p>Creating robust and scalable web applications.</p>
+            </div>
+            <div class="service-card" onclick="openModal('dataAnalysis')">
+                <i class="fas fa-chart-line service-icon"></i>
+                <h3>Data Analysis</h3>
+                <p>Providing actionable insights from your data.</p>
+            </div>
+            <div class="service-card" onclick="openModal('cloudComputing')">
+                <i class="fas fa-cloud service-icon"></i>
+                <h3>Cloud Computing</h3>
+                <p>Empowering your business with scalable cloud solutions.</p>
+            </div>
+            <div class="service-card" onclick="openModal('aiSolutions')">
+                <i class="fas fa-robot service-icon"></i>
+                <h3>AI Solutions</h3>
+                <p>Integrating AI to enhance business processes.</p>
+            </div>
+            <div class="service-card" onclick="openModal('cctvInstallation')">
+              <i class="fas fa-video service-icon"></i>
+              <h3>CCTV Installation</h3>
+              <p>Providing top-notch surveillance solutions for security.</p>
+          </div>
+          
+        </div>
+    </section>
+    <!-- Footer Section -->
+    
+    <footer class="footer">
+        <p>© 2025 POS Blog. All rights reserved.</p>
+    </footer>
+    <button class="up-button" id="upButton">
+        &#x25B2; Up
+      </button>
+
+    <script>
+        // Scroll to top button
+const upButton = document.getElementById('upButton');
+
+// Show the button when scrolling down
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    upButton.classList.add('visible');
+  } else {
+    upButton.classList.remove('visible');
+  }
+});
+
+// Scroll to the top smoothly when clicking the button
+upButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+});
+
+         
+    // Toggle Sidebar
+    document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const container = document.querySelector('.container');
+
+    hamburger.addEventListener('click', function() {
+        // Toggle the active class on the container
+        container.classList.toggle('active');
+        // Toggle the 'open' class on the hamburger icon
+        hamburger.classList.toggle('open');
+    });
+});
+
+  
+// Close the sidebar if the screen size is large enough
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) {
+        const sidebar = document.getElementById("sidebar");
+        const menuIcon = document.getElementById("menuIcon");
+        
+        // Remove the 'active' class to hide the sidebar
+        sidebar.classList.remove("active");
+
+        // Reset the menu icon to its hamburger state
+        menuIcon.classList.add("fa-bars");
+        menuIcon.classList.remove("fa-times");
+    }
+});
+
+        window.onscroll = function() {
+        var header = document.querySelector("header");
+        if (window.scrollY > 0) {  // When scroll position is greater than 0
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    };
+    
+    </script>
+
+     <!-- WhatsApp Chat Icon -->
+<a href="https://wa.me/254790352338" target="_blank" class="whatsapp-chat">
+    <img src="whatsapp.png" alt="Chat with Us on WhatsApp">
+  </a>
+
+</body>
+</html>
