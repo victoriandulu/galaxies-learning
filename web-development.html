@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Portal</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+       
+        .container-database {
+            max-width: 800px;
+            margin: auto;
+            margin-top: 80px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            background: #e6f7ff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        li strong {
+            display: block;
+            color: #007acc;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <div class="container">
+            <div class="logo">
+                <div class="logo">E-Learning Portal</div>
+                <button class="hamburger" id="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <a href="index.html">Courses</a>
+            <a href="#languages">Languages</a>
+            <a href="company.html">Company</a>
+            <a href="other-services.html">Other Services</a>
+            <a href="#contact">Contact</a>
+                   
+                
+            </nav>
+    
+        </div>
+    </header>
+    <div class="container-database">
+        <h1>Web Development</h1>
+        <ul>
+            <li><strong>1. Introduction to Web Development</strong>
+                <p>Understand how websites work, the basic tools required, and how to set up a development environment. Learn about the client-server model, domain names, and web hosting concepts.</p>
+            </li>
+            <li><strong>2. HTML Basics</strong>
+                <p>Learn the foundational elements of HTML, including tags, elements, attributes, and how to structure a basic web page. Topics include headings, paragraphs, links, and images.</p>
+            </li>
+            <li><strong>3. Advanced HTML</strong>
+                <p>Expand your HTML knowledge by creating forms, tables, and embedding multimedia such as audio and video files. Learn about semantic HTML and accessibility best practices.</p>
+            </li>
+            <li><strong>4. CSS Basics</strong>
+                <p>Get started with CSS by exploring selectors, properties, and values. Learn how to apply colors, format text, and manage spacing to style your HTML content.</p>
+            </li>
+            <li><strong>5. Layout Techniques</strong>
+                <p>Master modern layout techniques using CSS Flexbox and Grid. Understand positioning methods such as relative, absolute, and fixed to create visually appealing designs.</p>
+            </li>
+            <li><strong>6. Responsive Design</strong>
+                <p>Learn how to build mobile-friendly designs using media queries. Understand the principles of responsive design to ensure your websites look great on all devices.</p>
+            </li>
+            <li><strong>7. CSS Frameworks</strong>
+                <p>Get introduced to popular CSS frameworks like Bootstrap and Materialize CSS. Learn how to use pre-designed components to quickly build professional-looking web pages.</p>
+            </li>
+            <li><strong>8. Working with Animations</strong>
+                <p>Explore CSS animations, including transitions, transforms, and keyframes. Learn how to add interactivity and enhance user experience with smooth animations.</p>
+            </li>
+            <li><strong>9. Project: Building a Personal Portfolio</strong>
+                <p>Apply your knowledge by creating a static portfolio website. Showcase your skills and projects using HTML and CSS, and practice implementing responsive design techniques.</p>
+            </li>
+            <li><strong>10. Deployment</strong>
+                <p>Learn how to host your websites online using platforms like GitHub Pages, Netlify, or Vercel. Understand the basics of version control and deploying projects live.</p>
+            </li>
+        </ul>
+        
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 E-Learning Portal. All Rights Reserved.</p>
+    </footer>
+    <script>
+    // Toggle Sidebar
+    // Toggle Sidebar
+    document.addEventListener('DOMContentLoaded', function() {
+ const hamburger = document.getElementById('hamburger');
+ const container = document.querySelector('.container');
+
+ hamburger.addEventListener('click', function() {
+     // Toggle the active class on the container
+     container.classList.toggle('active');
+     // Toggle the 'open' class on the hamburger icon
+     hamburger.classList.toggle('open');
+ });
+});
+
+ </script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Portal</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+       
+        .container-database {
+            max-width: 800px;
+            margin: auto;
+            margin-top: 80px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            background: #e6f7ff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        li strong {
+            display: block;
+            color: #007acc;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <div class="container">
+            <div class="logo">
+                <div class="logo">E-Learning Portal</div>
+                <button class="hamburger" id="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <a href="index.html">Courses</a>
+            <a href="#languages">Languages</a>
+            <a href="company.html">Company</a>
+            <a href="other-services.html">Other Services</a>
+            <a href="#contact">Contact</a>
+                   
+                
+            </nav>
+    
+        </div>
+    </header>
+    <div class="container-database">
+        <h1>Database Management</h1>
+        <ul>
+            <li><strong>1. Introduction to Databases</strong> 
+                <p>This section introduces the concept of databases, explaining their purpose, history, and evolution. It covers the different types of databases such as relational and non-relational, highlighting their strengths and use cases. You'll also learn about key components like tables, rows, columns, and records, and understand how databases are foundational to modern software applications.</p>
+            </li>
+            <li><strong>2. SQL Basics</strong>
+                <p>Learn the fundamentals of SQL, the language used to interact with relational databases. This section covers Data Definition Language (DDL) commands for creating and modifying database structures, Data Manipulation Language (DML) commands for adding and managing data, and Transaction Control Language (TCL) for managing transactions. You’ll gain hands-on experience creating tables, inserting data, and running basic queries.</p>
+            </li>
+            <li><strong>3. Advanced SQL</strong>
+                <p>Dive deeper into SQL functionalities such as joins (inner, outer, self, and cross joins), subqueries, and aggregate functions like COUNT, AVG, and SUM. Learn about indexing and its role in speeding up queries. You'll also master writing efficient queries for complex datasets and understand how to troubleshoot common SQL issues.</p>
+            </li>
+            <li><strong>4. Database Design</strong>
+                <p>This section focuses on the principles of good database design, including normalization techniques (1NF, 2NF, 3NF, and BCNF) to reduce redundancy and improve efficiency. You’ll learn how to create Entity-Relationship (ER) diagrams to visualize database structures and develop schemas that align with real-world requirements. Case studies and examples will help reinforce these concepts.</p>
+            </li>
+            <li><strong>5. NoSQL Overview</strong>
+                <p>An introduction to the NoSQL paradigm, highlighting its differences from relational databases. This section explains when and why to use NoSQL, with a focus on document-based databases like MongoDB. You’ll learn how to perform basic operations like creating, reading, updating, and deleting documents, and understand the strengths of NoSQL in handling unstructured and semi-structured data.</p>
+            </li>
+            <li><strong>6. Database Connectivity</strong>
+                <p>Learn how to connect your database to popular programming languages like Python, Java, and PHP. This section covers database drivers, connection strings, and best practices for securely accessing databases. You’ll also explore Object-Relational Mapping (ORM) tools like SQLAlchemy (Python) and Hibernate (Java) to simplify database integration in applications.</p>
+            </li>
+            <li><strong>7. Backup and Recovery</strong>
+                <p>Understand the importance of safeguarding data with proper backup and recovery techniques. This section covers full, incremental, and differential backups, as well as strategies for disaster recovery. Learn how to restore databases effectively after a failure and test recovery plans to ensure reliability.</p>
+            </li>
+            <li><strong>8. Database Optimization</strong>
+                <p>This section focuses on performance tuning and query optimization. You’ll learn how to analyze query execution plans, create and manage indexes, and write efficient queries. Additional topics include partitioning data, caching strategies, and monitoring database performance using specialized tools.</p>
+            </li>
+            <li><strong>9. Advanced Concepts</strong>
+                <p>Explore advanced database features like triggers, stored procedures, and views. Understand how triggers can automate tasks in response to specific database events, and learn to create stored procedures for reusable and efficient database operations. Views will help you simplify complex queries and manage data access effectively.</p>
+            </li>
+            <li><strong>10. Project: Building a Database-Driven Application</strong>
+                <p>Put your knowledge into practice by developing a complete database-driven application. You’ll work on all stages of development, from gathering requirements and designing schemas to implementing and testing the database. Example projects include an inventory management system, a library catalog, or a simple e-commerce platform with CRUD functionalities.</p>
+            </li>
+        </ul>
+        
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 E-Learning Portal. All Rights Reserved.</p>
+    </footer>
+    <script>
+    // Toggle Sidebar
+    // Toggle Sidebar
+    document.addEventListener('DOMContentLoaded', function() {
+ const hamburger = document.getElementById('hamburger');
+ const container = document.querySelector('.container');
+
+ hamburger.addEventListener('click', function() {
+     // Toggle the active class on the container
+     container.classList.toggle('active');
+     // Toggle the 'open' class on the hamburger icon
+     hamburger.classList.toggle('open');
+ });
+});
+
+ </script>
+</body>
+</html>
