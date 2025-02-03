@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Portal</title>
+    <link rel="stylesheet" href="styles.css">
+   
+
+
+        
+</head>
+<body>
+    <header class="header">
+        <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <div class="container">
+            <div class="logo">
+                <div class="logo">Dev-Learning</div>
+                <button class="hamburger" id="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <a href="index.html">Courses</a>
+            
+            <a href="company.html">Company</a>
+            <a href="other-services.html">Other Services</a>
+            <a href="index.html#contact">Contact Us</a>
+
+                   
+                
+            </nav>
+    
+        </div>
+    </header>
+
+
+    <main class="main-container">
+        <button id="backButton" class="back-button">
+            <i class="fa fa-arrow-left"></i> Back
+        </button>
+        <h1>Mobile Programming (Android Native)</h1>
+        <p>Welcome to the Android programming course! Explore step-by-step tutorials and learn to create robust mobile apps using Android Native development. Each section will guide you through fundamental concepts and techniques used in Android development.</p>
+    
+        <div class="section introduction-section">
+            <h2>1. Introduction to Android Development</h2>
+            <p>Android OS overview, SDK setup, Android Studio installation, and project creation.</p>
+        </div>
+    
+        <div class="section ui-section">
+            <h2>2. Building UI with XML</h2>
+            <p>Layouts: LinearLayout, RelativeLayout, ConstraintLayout, etc. Views: TextView, EditText, Button.</p>
+        </div>
+    
+        <div class="section lifecycle-section">
+            <h2>3. Activity Lifecycle and Intents</h2>
+            <p>Understanding activity states and navigation using intents.</p>
+        </div>
+    
+        <div class="section fragments-section">
+            <h2>4. Working with Fragments</h2>
+            <p>Fragment lifecycle, managing fragments, and building flexible UIs.</p>
+        </div>
+    
+        <div class="section interaction-section">
+            <h2>5. Event Handling and User Interaction</h2>
+            <p>Handling button clicks, touch gestures, and input events.</p>
+        </div>
+    
+        <div class="section persistence-section">
+            <h2>6. Data Persistence</h2>
+            <p>SharedPreferences, SQLite database, and file storage.</p>
+        </div>
+    
+        <div class="section networking-section">
+            <h2>7. Networking</h2>
+            <p>Making API calls with Retrofit/Volley and JSON parsing.</p>
+        </div>
+    
+        <div class="section media-section">
+            <h2>8. Working with Media</h2>
+            <p>Audio and video playback, capturing photos, and handling permissions.</p>
+        </div>
+    
+        <div class="section material-design-section">
+            <h2>9. Material Design</h2>
+            <p>Implementing Material Design principles using RecyclerView, CardView, and animations.</p>
+        </div>
+    
+        <div class="section publishing-section">
+            <h2>10. Publishing Your App</h2>
+            <p>Preparing for release, signing APKs, and publishing on Google Play.</p>
+        </div>
+    </main>
+    
+    
+    
+    
+</body>
+    <footer>
+        <p>&copy; 2025 E-Learning Portal. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Handle Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent form from refreshing the page
+            alert('Thank you for contacting us! We will get back to you soon.');
+            this.reset(); // Reset the form
+        });
+
+        // Toggle Sidebar
+       // Toggle Sidebar
+       document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const container = document.querySelector('.container');
+
+    hamburger.addEventListener('click', function() {
+        // Toggle the active class on the container
+        container.classList.toggle('active');
+        // Toggle the 'open' class on the hamburger icon
+        hamburger.classList.toggle('open');
+    });
+});
+    // Back Button Functionality
+    const backButton = document.getElementById('backButton');
+        backButton.addEventListener('click', function() {
+            if (window.history.length > 1) {
+                window.history.back();
+            } else {
+                alert('No previous page in the session history.');
+            }
+        });
+
+    </script>
+</body>
+</html>

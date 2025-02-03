@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Portal</title>
+    <link rel="stylesheet" href="styles.css">
+   
+
+
+        
+</head>
+<body>
+    <header class="header">
+        <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <div class="container">
+            <div class="logo">
+                <div class="logo">Dev-Portal</div>
+                <button class="hamburger" id="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <a href="index.html">Courses</a>
+            
+            <a href="company.html">Company</a>
+            <a href="other-services.html">Other Services</a>
+            <a href="index.html#contact">Contact Us</a>
+
+                
+            </nav>
+    
+        </div>
+    </header>
+
+    <main class="main-container">
+        <h1>Java Spring Boot Development</h1>
+        <p>Welcome to the Java Spring Boot course! Explore the power of Spring Boot for building robust and scalable backend applications. This course covers everything from the basics to advanced concepts for modern web development.</p>
+    
+        <div class="section introduction-section">
+            <h2>1. Introduction to Spring Boot</h2>
+            <p>Overview, features, and setting up a project. Learn the benefits of Spring Boot over traditional Spring applications.</p>
+        </div>
+    
+        <div class="section rest-api-section">
+            <h2>2. REST API Basics</h2>
+            <p>Creating your first REST API with Spring Boot. Learn about request mapping, controllers, and response handling.</p>
+        </div>
+    
+        <div class="section di-section">
+            <h2>3. Dependency Injection</h2>
+            <p>Understanding DI and using Spring annotations such as @Component, @Service, and @Repository.</p>
+        </div>
+    
+        <div class="section database-section">
+            <h2>4. Database Integration</h2>
+            <p>JPA and Hibernate basics, connecting to a database. Configure database properties and manage schema with Spring Boot tools.</p>
+        </div>
+    
+        <div class="section crud-section">
+            <h2>5. CRUD Operations</h2>
+            <p>Build a complete CRUD application with RESTful APIs and database integration.</p>
+        </div>
+    
+        <div class="section exception-handling-section">
+            <h2>6. Exception Handling</h2>
+            <p>Global exception handling using @ControllerAdvice and @ExceptionHandler annotations.</p>
+        </div>
+    
+        <div class="section spring-security-section">
+            <h2>7. Spring Security</h2>
+            <p>Authentication, authorization, and JWT integration. Learn to secure endpoints and manage user roles.</p>
+        </div>
+    
+        <div class="section pagination-sorting-section">
+            <h2>8. Pagination and Sorting</h2>
+            <p>Implementing pagination and sorting in APIs using Spring Data JPA.</p>
+        </div>
+    
+        <div class="section testing-section">
+            <h2>9. Testing Spring Boot Applications</h2>
+            <p>Writing unit and integration tests using JUnit and Mockito. Understand testing strategies for APIs.</p>
+        </div>
+    
+        <div class="section deployment-section">
+            <h2>10. Deploying Spring Boot Applications</h2>
+            <p>Deploying on Heroku, AWS, or other cloud platforms. Learn to package your application with Maven or Gradle.</p>
+        </div>
+    
+        <div class="section microservices-section">
+            <h2>11. Building Microservices</h2>
+            <p>Introduction to microservices architecture with Spring Boot. Learn how to create and manage microservices using Spring Cloud.</p>
+        </div>
+    
+        <div class="section actuator-section">
+            <h2>12. Spring Boot Actuator</h2>
+            <p>Learn to monitor and manage your application using Spring Boot Actuator. Enable health checks and metrics for your application.</p>
+        </div>
+    
+        <div class="section configuration-section">
+            <h2>13. Advanced Configuration</h2>
+            <p>Learn how to manage configurations effectively using application.properties, YAML, and Spring profiles for different environments.</p>
+        </div>
+    
+        <div class="section advanced-database-section">
+            <h2>14. Advanced Database Topics</h2>
+            <p>Master database migrations with Flyway or Liquibase. Learn about caching strategies using Redis and Ehcache.</p>
+        </div>
+    
+        <div class="section message-queues-section">
+            <h2>15. Message Queues</h2>
+            <p>Integrate message queues like RabbitMQ or Kafka to enable asynchronous processing in your applications.</p>
+        </div>
+    
+        <div class="section full-stack-project-section">
+            <h2>16. Capstone Full-Stack Project</h2>
+            <p>Bring everything together by building a complete full-stack application. This project will include backend APIs, database integration, security, and a simple front-end interface.</p>
+        </div>
+    </main>
+    
+    
+    
+    
+    
+</body>
+    <footer>
+        <p>&copy; 2025 E-Learning Portal. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Handle Contact Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent form from refreshing the page
+            alert('Thank you for contacting us! We will get back to you soon.');
+            this.reset(); // Reset the form
+        });
+
+        // Toggle Sidebar
+       // Toggle Sidebar
+       document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.getElementById('hamburger');
+    const container = document.querySelector('.container');
+
+    hamburger.addEventListener('click', function() {
+        // Toggle the active class on the container
+        container.classList.toggle('active');
+        // Toggle the 'open' class on the hamburger icon
+        hamburger.classList.toggle('open');
+    });
+});
+
+    </script>
+</body>
+</html>

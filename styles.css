@@ -45,6 +45,8 @@ html, body {
 .nav-links {
     display: flex;
     gap: 15px;
+    font-size: 22px;
+    margin-right: 50px;
 }
 
 .nav-links a {
@@ -820,3 +822,21 @@ footer {
     transform: scale(1.1); /* Slightly enlarges the icon on hover */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
   }
+
+  .back-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #007BFF;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
